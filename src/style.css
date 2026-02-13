@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(145deg, #1a2639 0%, #2a3b4f 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", Roboto, system-ui, sans-serif;
+}
+.card {
+  background: rgba(22, 30, 45, 0.7);
+  backdrop-filter: blur(6px);
+  border-radius: 48px;
+  padding: 30px 30px 40px;
+  box-shadow:
+    0 30px 40px -15px rgba(0, 0, 0, 0.6),
+    0 0 0 1px rgba(200, 220, 255, 0.15) inset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+canvas {
+  display: block;
+  width: 500px;
+  height: 300px;
+  border-radius: 32px;
+  background: #101924;
+  box-shadow:
+    0 0 0 2px #2f3b54,
+    0 20px 30px -8px black;
+  cursor: pointer;
+}
+.button-row {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.btn {
+  background: #293445;
+  border: none;
+  border-radius: 60px;
+  padding: 12px 32px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #d3e2ff;
+  letter-spacing: 0.5px;
+  box-shadow:
+    0 6px 0 #121a27,
+    0 6px 12px rgba(0, 0, 0, 0.4);
+  transition: all 0.08s linear;
+  cursor: pointer;
+  border: 1px solid #4a5b7c;
+}
+.btn:active {
+  transform: translateY(6px);
+  box-shadow:
+    0 1px 0 #121a27,
+    0 6px 12px rgba(0, 0, 0, 0.4);
+}
+.btn.highlight {
+  background: #3f5b8c;
+  color: white;
+  border-color: #90a9d4;
+}
+.signature {
+  margin-top: 18px;
+  color: #7b8eb0;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.signature span {
+  color: #b7d0ff;
+  font-weight: 500;
+}
