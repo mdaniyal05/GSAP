@@ -1,3 +1,1 @@
 # GSAP
-
-Animation with GSAP.
